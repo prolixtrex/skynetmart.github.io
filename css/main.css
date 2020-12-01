@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-fixed-top {
+	background: url(../image/bg.png) !important;
+	font-weight: bold;
+	border:none;
+}
+
+.navbar-fixed-bottom {
+	background-color: transparent;
+	border-top: 2px solid !important;
+	
+}
+
+.navbar-fixed-bottom ul {
+	width: 100%;
+	padding: 0px 5px;
+}
+
+.navbar-fixed-bottom ul li {
+	float: left;
+	padding: 0px 0px;
+}
+
+.navbar-fixed-bottom img {
+	width: 25px;
+	height: 25px;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background: url(../image/bg.png) !important;
+	font-family:arial,helvetica,sans-serif,verdana,'Open Sans';
+}
+
+.content {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+aside {
+	background-color: #001B2E;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+}
+
+aside .btn {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: large;
+}
+
+.navbar .nav li .active{
+	background-color: #60CFFF;
+}
+
+@media (max-width: 479px){ /* 991px for large tablets, 767 for medium tablet sizes*/
+	.cathegories .btn {
+		white-space: normal; /* or pre-wrap */
+		word-wrap: break-word;
+		word-break: normal;
+		font-size: x-small;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-weight: bold;
+	}
+	aside p:first-child, .cathegories .well, .navbar-fixed-top .nav, .navbar-form button {
+		display: none;
+	}
+	.navbar form {
+		display: block;
+		width: 70%;
+		margin-left: 70px;
+		margin-top: -55px;
+		margin-bottom: -20px;
+		border-bottom: none;
+	}
+	.navbar-left img {
+		width: 80px;
+	}
+	.navbar-right img {
+		margin-left: 88%;
+		margin-top: -46px !important;
+		margin-bottom: 0px !important;
+	}
+	.jssora093 {
+		display: none !important; /* remove the left and right arrows on image slider */
+	}
+}
+
+@media (min-width: 479px) {
+	.tab-content {
+		display: none;
+	}
+	.navbar-fixed-bottom {
+		display: none;
+	}
+}
+
+.tab-content .panel-heading {
+	height: 25px;
+}
+
+.tab-content .panel-heading p {
+	display: inline-block;
+	font-size: x-small;
+	font-weight: bold;
+	margin-top: -5px;
+}
+.tab-content .panel-heading p:first-child {
+	float: left;
+}
+
+.tab-content .panel-heading p:last-child {
+	float: right;
+}
+
+/*--------------------------------------------------------------------------
++	jssor slider css
+--------------------------------------------------------------------------*/
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 053 css*/
+.jssorb053 .i {position:absolute;cursor:pointer;}
+.jssorb053 .i .b {fill:#fff;fill-opacity:0.3;}
+.jssorb053 .i:hover .b {fill-opacity:.7;}
+.jssorb053 .iav .b {fill-opacity: 1;}
+.jssorb053 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 093 css*/
+.jssora093 {display:block;position:absolute;cursor:pointer;}
+.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093:hover {opacity:.8;}
+.jssora093.jssora093dn {opacity:.6;}
+.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+/*jssor loading screen css*/
+#jssor_1 {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    visibility:hidden;
+}
+
+#jssor_1 .jssorl-009-spin {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#jssor_1 .jssorl-009-spin img {
+    margin-top: -19px;
+    position: relative;
+    top: 50%;
+    width: 38px;
+    height: 38px;"
+}
+
+#jssor_1 .img-placement {
+	cursor: default;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 380px;
+	overflow:hidden;
+}
